@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دعوة خطوبة - محمد & M</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Reem+Kufi:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="splash" class="splash-screen">
+        <div class="splash-decor top-left"></div>
+        <div class="splash-decor top-right"></div>
+        <div class="splash-decor bottom-left"></div>
+        <div class="splash-decor bottom-right"></div>
+        <div class="splash-content">
+            <div class="splash-heart"><i class='bx bxs-heart'></i></div>
+            <h2 class="kufi-font">دعوة زفاف</h2>
+            <h1 class="kufi-font">محمد & M</h1>
+            <div class="loader-container">
+                <div class="loader-bar" id="loaderBar"></div>
+            </div>
+            <button id="openInvite" class="btn open-btn" style="display: none;">افتح الدعوة</button>
+        </div>
+    </div>
+
+    <div class="particles" id="particles"></div>
+    <div class="petals" id="petals"></div>
+    
+    <button class="music-toggle" id="musicToggle" title="تشغيل/إيقاف الموسيقى">
+        <i class='bx bxs-music'></i>
+    </button>
+    <div class="visualizer">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <audio id="bgMusic" loop preload="auto">
+        <source src="audio.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="overlay"></div>
+    
+    <main class="container">
+        <header class="hero-section">
+            <h1 class="wedding-title">دعوة خطوبة</h1>
+            
+            <section class="quote-section kufi-font">
+                <p>"وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً"</p>
+            </section>
+
+            <div class="names kufi-font">
+                <span class="name">محمد</span>
+                <i class='bx bxs-heart accent-icon'></i>
+                <span class="name">M</span>
+            </div>
+        </header>
+
+        <section class="details-card">
+            <p class="intro-text">بكل الحب والسرور نتشرف بدعوتكم لحضور حفل خطوبتنا لمشاركتنا فرحة العمر</p>
+            
+            <div class="info-grid">
+                <div class="info-item">
+                    <i class='bx bxs-map-pin icon'></i>
+                    <div class="info-content">
+                        <h3>المكان</h3>
+                        <p>قاعة شهرزاد</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class='bx bxs-calendar icon'></i>
+                    <div class="info-content">
+                        <h3>الموعد</h3>
+                        <p>ثالث أيام عيد الأضحى</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class='bx bxs-time icon'></i>
+                    <div class="info-content">
+                        <h3>الساعة</h3>
+                        <p>السابعة مساءً (7:00 PM)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="countdown-section">
+            <h2>ننتظركم بشوق</h2>
+            <div id="countdown" class="countdown-timer">
+                <div class="timer-box"><span id="days">00</span><small>يوم</small></div>
+                <div class="timer-box"><span id="hours">00</span><small>ساعة</small></div>
+                <div class="timer-box"><span id="minutes">00</span><small>دقيقة</small></div>
+                <div class="timer-box"><span id="seconds">00</span><small>ثانية</small></div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>حضوركم يسعدنا ويتم فرحتنا</p>
+            <div class="actions">
+                <button class="btn primary-btn rsvp-btn">
+                    <i class='bx bxl-whatsapp'></i> تأكيد الحضور
+                </button>
+                <button class="btn secondary-btn location-btn">
+                    <i class='bx bx-map-alt'></i> موقع القاعة
+                </button>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
