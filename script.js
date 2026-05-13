@@ -120,39 +120,41 @@ function createParticle() {
     setTimeout(() => particle.remove(), 20000);
 }
 
-// Falling Petals (Boxicons Flowers)
+// Falling Flower Icons (Bouquet Style)
 function createPetal() {
     const container = document.getElementById('petals');
     if (!container) return;
     
-    const petal = document.createElement('i');
-    // Variety of Boxicons flower/spa icons
+    const icon = document.createElement('i');
+    // Using variety of flower and spa icons to simulate a bouquet effect
     const flowerIcons = ['bx-spa', 'bxs-spa', 'bx-flower', 'bxs-flower', 'bx-flower-alt', 'bxs-flower-alt'];
     const randomIcon = flowerIcons[Math.floor(Math.random() * flowerIcons.length)];
     
-    petal.className = `bx ${randomIcon}`;
-    petal.style.position = 'absolute';
-    petal.style.left = Math.random() * 100 + 'vw';
-    petal.style.top = '-10vh';
-    petal.style.fontSize = (Math.random() * 20 + 15) + 'px';
-    petal.style.color = '#ffb7c5'; // Soft pink
-    petal.style.opacity = Math.random() * 0.6 + 0.3;
-    petal.style.zIndex = '100';
+    icon.className = `bx ${randomIcon}`;
+    icon.style.position = 'absolute';
+    icon.style.left = Math.random() * 100 + 'vw';
+    icon.style.top = '-5vh';
+    icon.style.fontSize = (Math.random() * 20 + 15) + 'px';
+    icon.style.color = Math.random() > 0.5 ? '#c5a059' : '#8a0303'; // Mix of Gold and Burgundy
+    icon.style.opacity = Math.random() * 0.6 + 0.4;
+    icon.style.zIndex = '100';
+    icon.style.pointerEvents = 'none';
+    icon.style.textShadow = '0 0 5px rgba(0,0,0,0.3)';
     
     // Add custom animation for realistic falling
     const duration = Math.random() * 10 + 7;
-    petal.style.transition = `transform ${duration}s linear, opacity ${duration}s`;
+    icon.style.transition = `transform ${duration}s linear, opacity 1s ease-in ${duration - 1}s`;
     
-    container.appendChild(petal);
+    container.appendChild(icon);
     
     setTimeout(() => {
         const drift = Math.random() * 200 - 100;
         const rotation = Math.random() * 1000 - 500;
-        petal.style.transform = `translateY(110vh) translateX(${drift}px) rotate(${rotation}deg)`;
-        petal.style.opacity = '0';
+        icon.style.transform = `translateY(110vh) translateX(${drift}px) rotate(${rotation}deg)`;
+        icon.style.opacity = '0';
     }, 100);
     
-    setTimeout(() => petal.remove(), duration * 1000 + 1000);
+    setTimeout(() => icon.remove(), duration * 1000 + 1000);
 }
 
 // Generate more particles and petals
