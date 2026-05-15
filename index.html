@@ -17,17 +17,14 @@
         <div class="splash-decor bottom-left"></div>
         <div class="splash-decor bottom-right"></div>
         <div class="splash-content">
-            <div class="bismillah amiri-font">بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ</div>
-            <div class="splash-heart"><i class='bx bx-ring'></i></div>
-            <h2 class="amiri-font">دعوة خطوبة</h2>
-            <div class="year-badge">2026</div>
+            <div class="bismillah amiri-font" style="font-size: 1.5rem; color: var(--accent-gold); margin-bottom: 20px;">بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ</div>
+            <div class="splash-heart"><i class='bx bxs-heart-circle'></i></div>
+            <h2 class="amiri-font" style="color: var(--accent-gold); font-size: 2rem;">دعوة خطوبة</h2>
             <h1 class="amiri-font">محمد & M</h1>
-            <div class="splash-date amiri-font">الجمعة، 29 مايو 2026</div>
-            <p class="splash-welcome">نتشرف بلقائكم في ليلة من ليالي العمر</p>
             <div class="loader-container">
                 <div class="loader-bar" id="loaderBar"></div>
             </div>
-            <button id="openInvite" class="btn open-btn" style="display: none;">افتح الدعوة</button>
+            <button id="openInvite" class="open-btn" style="display: none;">افتح الدعوة</button>
         </div>
     </div>
 
@@ -37,80 +34,65 @@
     <button class="music-toggle" id="musicToggle" title="تشغيل/إيقاف الموسيقى">
         <i class='bx bxs-music'></i>
     </button>
-    <div class="visualizer">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-    </div>
 
     <audio id="bgMusic" loop preload="auto">
         <source src="audio.mp3" type="audio/mpeg">
     </audio>
 
-    <div class="overlay"></div>
-    
     <main class="container">
         <header class="hero-section">
-            <div class="bismillah-main amiri-font">بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ</div>
-            <h1 class="wedding-title amiri-font">دعوة خطوبة</h1>
+            <div class="bismillah amiri-font" style="font-size: 1.8rem; color: var(--accent-gold); margin-bottom: 30px;">بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ</div>
+            <h2 class="wedding-title amiri-font">دعوة خطوبة</h2>
             
-            <section class="quote-section amiri-font">
-                <p>"وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً"</p>
-            </section>
-
             <div class="names amiri-font">
                 <span class="name">محمد</span>
-                <div class="heart-container">
-                    <i class='bx bxs-heart accent-icon'></i>
-                    <div class="heart-glow"></div>
-                </div>
+                <i class='bx bxs-heart accent-icon'></i>
                 <span class="name">M</span>
             </div>
-            
+
+            <section class="quote-section amiri-font" style="font-size: 1.3rem; color: var(--text-muted); margin: 30px 0; font-style: italic;">
+                "وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً"
+            </section>
         </header>
 
         <section class="details-card">
-            <div class="card-corner top-left-corner"></div>
-            <div class="card-corner bottom-right-corner"></div>
-            
-            <p class="main-msg">نتشرف بدعوتكم لمشاركتنا فرحة خطوبة ابننا وابنتنا، حيث ننسج معاً أولى خيوط الأمل في حياة زوجية سعيدة بإذن الله.</p>
+            <p class="main-msg amiri-font" style="font-size: 1.4rem; margin-bottom: 40px;">نتشرف بدعوتكم لمشاركتنا فرحة خطوبتنا، لنسطر معاً أجمل ذكريات العمر.</p>
             
             <div class="info-grid">
                 <div class="info-item">
-                    <i class='bx bxs-calendar-heart icon'></i>
-                    <div class="info-content">
-                        <h3>التاريخ</h3>
-                        <p>الجمعة، ثالث أيام العيد</p>
-                    </div>
+                    <i class='bx bxs-calendar'></i>
+                    <h3>التاريخ</h3>
+                    <p>الجمعة، ثالث أيام العيد</p>
                 </div>
                 <div class="info-item">
-                    <i class='bx bxs-map-alt icon'></i>
-                    <div class="info-content">
-                        <h3>الموقع</h3>
-                        <p>قاعة شهرزاد الفاخرة</p>
-                    </div>
+                    <i class='bx bxs-time'></i>
+                    <h3>التوقيت</h3>
+                    <p>7:30 مساءً</p>
                 </div>
                 <div class="info-item">
-                    <i class='bx bxs-time-five icon'></i>
-                    <div class="info-content">
-                        <h3>التوقيت</h3>
-                        <p>7:30 مساءً</p>
-                    </div>
+                    <i class='bx bxs-map-pin'></i>
+                    <h3>الموقع</h3>
+                    <p>قاعة شهرزاد الفاخرة</p>
                 </div>
             </div>
 
-            <div class="additional-info">
-                <div class="note-box">
-                    <i class='bx bxs-star'></i>
-                    <span>حضوركم يتمم فرحتنا ويزيدنا بهجة</span>
-                    <i class='bx bxs-star'></i>
+            <!-- New Map Section -->
+            <div class="map-section">
+                <div class="map-preview">
+                    <i class='bx bxs-map-alt'></i>
+                    <p>خريطة الموقع</p>
                 </div>
+                <button class="btn primary-btn location-btn" style="width: 100%; justify-content: center;">
+                    <i class='bx bx-map-pin'></i> فتح الخريطة بدقة
+                </button>
+                <small class="location-note">
+                    <i class='bx bx-info-circle'></i> الموقع المفروض بجانب العلامة بمسافة بسيطة جداً
+                </small>
             </div>
         </section>
 
         <section class="countdown-section">
-            <h2>ننتظركم بشوق</h2>
+            <h3 style="color: var(--accent-gold); margin-bottom: 20px; font-weight: 300; letter-spacing: 3px;">ننتظركم بشوق</h3>
             <div id="countdown" class="countdown-timer">
                 <div class="timer-box"><span id="days">00</span><small>يوم</small></div>
                 <div class="timer-box"><span id="hours">00</span><small>ساعة</small></div>
@@ -120,16 +102,23 @@
         </section>
 
         <footer class="footer">
-            <p>حضوركم يسعدنا ويتم فرحتنا</p>
             <div class="actions">
                 <button class="btn primary-btn rsvp-btn">
                     <i class='bx bxl-whatsapp'></i> تأكيد الحضور
                 </button>
-                <button class="btn secondary-btn location-btn">
-                    <i class='bx bx-map-alt'></i> موقع القاعة
-                </button>
             </div>
+            <p style="margin-top: 30px;">حضوركم يتمم فرحتنا</p>
         </footer>
+
+        <!-- Floral Corner Decorations -->
+        <div class="floral-corner bottom-left">
+            <i class='bx bxs-spa'></i>
+            <i class='bx bxs-leaf' style="transform: rotate(45deg); font-size: 1.2rem;"></i>
+        </div>
+        <div class="floral-corner bottom-right">
+            <i class='bx bxs-spa'></i>
+            <i class='bx bxs-leaf' style="transform: rotate(-45deg); font-size: 1.2rem;"></i>
+        </div>
     </main>
 
     <script src="script.js"></script>
